@@ -1,0 +1,40 @@
+# Definição
+Definir uma interface para criar um objeto,
+mas deixar as busclasses decirem que classe instanciar.
+O factory Method permite adiar a instanciação para as subclasses.
+
+Sobre
+
+É um padrão de projeto de criação ( lida com a criação de objetos )
+Oculta a lógica de instanciação de código cliente. O método fábrica
+será responsável por instanciar as classes desejadas.
+
+Aplicabilidade
+
+- Use o factory method quando não souber com certeza quais os tipos de
+objeto que seu código vai precisar.
+
+- Use o factory method para permitir extensão de suas factories para criação de
+novos obetos ( O/C Principle)
+
+- Use o factory method para desacoplar o código que cria do código que usas as classes
+(Single Responsability Principle)
+
+- Use o factory method para dar um hook ás subclasses para permitir que elas
+decidam a logica de criação dos objetos
+
+- Use o factory method para eliminar a duplicação de código na criação de objetos.
+
+
+Vantagens
+
+Ajuda a aplicar o Open/Closed Principle. Seu código vai estar aperto para
+extensão.
+Ajuda na aplicação da Single responsability principle.
+Ajuda no desacoplamento do seu código.
+
+
+Desvantagem
+
+Se usado sem necessidade, pode causar uma explosão de subclasses.
+Será necessário uma classe conrcrete creator para cada concrete product

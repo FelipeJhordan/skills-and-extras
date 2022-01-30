@@ -1,0 +1,79 @@
+O que são ppadrões de projeto
+
+São soluções elegantes para problemas conhecidos recorrentes no desenvolvimento
+de software que foram utilizados e testados no passado e continuam relevantes nos
+dias atuais:
+
+Esses padrões foram catalogados e popularizados pelo livro "Padrão de projeto - 
+Soluções reutilizáveis de software orientados a objetos" ( Os padrões da "GOF")
+São reconhecidos mundialmente e passaram pelo teste do tempo("continuam sendo 
+utilizados até hoje")
+-------------------------------------------------------
+Divisões
+Creational, scructural e behavioural
+São divididos em 3 categorias: de criação ( creational), que visam abstrair o 
+processo como objetos são criados na aplicação; estruturais ( structural ), que lidam 
+com a composição de classes e objetos; comportamentais ( behavioural), que caracterizam
+como as classes e objetos interagem e distribuem responsabilidades na aplicação.
+
+-----------------------------------------------------------
+Como usar?
+São apenas sugestoes de software que podem ser aplicadas em qualquer linguagem.
+
+-----------------------------------------------------------
+Vantagens
+
+O que é bom:
+
+-   Você não precisa reiventar a roda
+-   Padrões universais facilitam o entendimento do seu projeto
+-   Evita refatoração desnecessária
+-   Ajuda na reutilização de codigo
+-   Abstrai e nomeia partes particulares do projeto
+-   Ajuda na aplicação dos principios do design orientado a objetos (SOLID)
+-   Facilitam a criação de testes unitários
+
+
+Desvantagens 
+
+Oque é ruim:
+-  Alguns padrões são demasiadamente complexos e demoram para fixar na cabeça
+-  Muito código para atiginr um objetivo simples
+-  Podem trazer otimizações prematuras para seu codigo
+-  Se usados incorretamente podem atrapalhar em vez de ajudar 
+
+
+--------------------------------------------------
+Lista                           Estrutural          Comportamental
+
+    De criação                  Adapter                Interpreter
+    Factory Method              Bridge                 Template method
+    Builder                     Composite              Chain of responsibility
+    Singleton                   Decorator              Iterator 
+                                Façade                 Command
+                                Flyweight              Mediator
+                                Proxy                  Memento
+                                                       Observer
+                                                       State
+                                                       Strategy
+                                                       Visitor
+
+---------------------------------------------------------------------
+Princípios do design orientados a objetos (SOLID)
+
+-   Single Responsability Principle ( Principio de responsabilidade unica ) Uma 
+classe deve ter apenas um motivo para mudar
+
+
+-   Open/closed principle(Principio aberto / fechado ) - classes ou objetos e métodos devem
+estar abertos para extensão, mas fechados para modificações
+
+-   Liskov substitution principle ( Principio de substituição de liskov) - classes derivadas
+devem ser capazes de substituir totalmente classes-bases
+
+-    Interface segregation principle(Principio da segregação de interface) - os clientes não
+devem ser forçados a depender de interfaces que não utilizam
+
+-   Depedency inversion principle (Principio de inversão de dependencia) - Módulos de alto nível
+não devem ser dependentes de módulos de baixo nível; ambos devem depender de abstrações.
+Detalhes devem depender das abstrações, não o inverso

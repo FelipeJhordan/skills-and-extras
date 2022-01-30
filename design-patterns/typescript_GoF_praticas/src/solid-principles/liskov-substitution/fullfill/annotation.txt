@@ -1,0 +1,42 @@
+# Princípio da Substituição de Liskov
+
+“Classes derivadas devem ser facilmente substituídas pelas classes base.”
+Este conceito foi introduzido por Barbara Liskov em 1987, no qual defende a ideia que
+ uma classe base pode ser substituída em qualquer momento por suas classes herdadas sem ser modificada.
+Cumprindo o Principio
+
+Abaixo temos um exemplo de classe Pessoa que tem as propriedades de Nome e Sobrenome,
+com uma ação de DizerSaudacao. Para cada nacionalidade foi criada uma classe que herda de Pessoa,
+e diz sua saudação conforme sua língua.
+
+abstract class Pessoa {
+    Nome: string;
+    Sobrenome: string;
+
+    /*
+    * @returns Retorna a Saudação da Pessoa
+    */
+    abstract DizerSaudacao(): string;
+}
+
+class Brasileiro extends Pessoa {
+    DizerSaudacao(): string {
+        return "Bom dia! Eu sou o " + this.Nome + " " + this.Sobrenome;
+    }
+}
+class Americano extends Pessoa {
+    DizerSaudacao(): string {
+        return "Good Morning! I'm " + this.Nome + " " + this.Sobrenome;
+    }
+}
+class Italiano extends Pessoa {
+    DizerSaudacao(): string {
+        return "Buongiorno! Sono " + this.Nome + " " + this.Sobrenome;
+    }
+}
+
+class EscritaSaudacao {
+    EscreverSaudacao(pessoa: Italiano): string {
+        return pessoa.DizerSaudacao();
+    }
+}

@@ -7,3 +7,5 @@ Repositório para guardar anotações e código sobre algumas habilidades ineren
 - Banco de dados relacionais
 - Banco de dados não relacionais
 - Lógica de programação ( URI ) 
+- Design Patterns
+- Solid

@@ -1,0 +1,34 @@
+# Adapter
+
+## Intenção Oficial
+
+Converter a interface de uma classe em outra interface esperada
+pelos clientes.
+
+
+## Sobre
+
+- É um padrão de categoria estrutural
+- Faz exatamente o que um adaptador da vida real faz
+ ( pense em um adaptador de tomadas de um formato para outro)
+- É muito usado para definir limites dentro de camadas da aplicação
+- Também pode user usado para adaptar interfaces de código legado para um novo código
+- Existe duas estruturas: herança múltiplica ( muitas linguagens não suportam) e herança por composição
+
+## Aplicabilidade
+### Utilize o padrão adapter quando:
+- Você não quiser que seu código dependa diretamente do código de terceiros ou legado
+- Você quiser usar uma classe existente mais sua interface for incompativel com a interface que seu
+código ou domínio precisam
+- Voce quiser reutilizar várias subclasses que não possuam determinada funcionalidade mas for
+impraticavel estender o código de cada um apenas para adicionar funcionalidade desejada (Decorator também faz isso)
+
+## Consequencias
+### Boas
+- Desacopla o código da aplicação de código de terceiros
+- Aplica o SRP ao separar a conversão de interfaces da lógica da aplicação
+- Aplica o OCP ao permitir introduzir novos adapter para códigos existentes
+
+### Ruim
+- Aumenta a complexidade da aplicação ( POr outro lado, qual outra solução poderia ser aplicada?)
+
