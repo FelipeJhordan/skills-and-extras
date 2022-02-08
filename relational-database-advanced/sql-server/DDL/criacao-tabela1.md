@@ -1,5 +1,6 @@
 ## Como criar tabela
 
+```
 CREATE TABLE mangas (
 id INT PRIMARY KEY IDENTITY(1,1),
 name VARCHAR (50) NOT NULL,
@@ -23,6 +24,14 @@ update_at DATETIME default GETDATE() NOT NULL,
 deleted_at DATETIME default GETDATE()
 FOREIGN KEY (manga_id) REFERENCES mangas (id)
 )
+```
+
+## Deleção de uma tabela ( eu não iria criar um arquivo apenas para isso né kkk)
+
+```
+DROP TABLE chapters;
+TRUNCATE TABLE chapters; ( Dropa e recria a tabela)
+```
 
 ## Anotações
 
