@@ -1,7 +1,7 @@
 # Estudo sobre serverless com node
 ## Anotações
 - É um tipo de servidor (apesar que o nome indique que sem servidor...)
-- Basicamente hospedar uma funcionalidade da aplicação sem se preocupar com configurações do servidor ( sem se preocupar com node, lib e processo de deploy ), pois as dependencias já estão instaladas de forma nativas.
+- Basicamente hospedar uma funcionalidade da aplicação sem se preocupar com configurações do servidor ( sem se preocupar com node processo de deploy ).
 - Pode colocar qualquer tipo de aplicação, menos as de socket/tempo real.
 - Geralmente disparadas por rotas http(rest) ou eventos disparados por outros serviços existentes.
 - Geralmente a arquitetura serverless é utilizada para processar códigos assíncronos que não tem necessidade de execução imediata e que podem causar um processamento desnecessário na aplicação principal hospedada em servidores comuns.
