@@ -4,6 +4,31 @@ frameworkVersion: '3'
 provider:
   name: aws
   runtime: nodejs12.x
+  region: sa-east-1
+  memorySize: 256
+  iamRoleStatements: 
+  - Effect: Allow
+    Action:
+      - s3:GetObject
+      - s3:PutObject
+    Resource: 
+      - "arn:aws:s3:::*"
 functions:
-  hello:
-    handler: handler.hello
+  optmize:
+    handler: optmize.handle
+    environment: 
+      bucket: felipejhbucketserverless2022
+    events:
+      - s3:
+          bucket: felipejhbucketserverless2022
+          event: s3:ObjectCreated:*
+          rules:
+            - prefix: uploads/
+            - suffix: .jpg
+      - s3:
+          bucket: felipejhbucketserverless2022
+          event: s3:ObjectCreated:*
+          rules:
+            - prefix: uploads/
+            - suffix: .png
+        
