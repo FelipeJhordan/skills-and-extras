@@ -13,7 +13,7 @@ que o mesmo processo de construção possa criar diferentes representações
 - Permite a criação de um objeto em etapas
 - Permite method chaining
 - Objeto final pode variar de acordo com a necessidade
-- É um padrão complexo
+- É um padrão complexo e as vezes só é necessário quando um objeto não pode ser produzido em uma etapa.
 
 ## Processos
 Director ( Optional) - > Defini a ordem em que as etapas de construção do objeto
@@ -35,4 +35,3 @@ Product -> O pruduto ( objeto ) final
 ### Ruim
 - O código final pode se tornar muito complexo
 
-##

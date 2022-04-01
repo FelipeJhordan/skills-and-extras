@@ -5,7 +5,7 @@ Este princípio indica que toda classe, todo método, função ou componente de 
 
 ## violation
 
-// Está errado pois está unificando a parte de repository e da "entidade"
+Está errado pois está unificando a parte de repository e da "entidade"
 o papel de uma atividade não é de chamar o repositorio para salvar ela ou outra atividade
 
 
