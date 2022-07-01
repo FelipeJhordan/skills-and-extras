@@ -12,3 +12,7 @@ Clean Code é uma filosofia de desenvolvimento cuja o principal objetivo é apli
 ## Impressões
 
 - Tornar o código limpo é algo relativo e nunca vai ser uma constante, mas é sempre importante se colocar no papel da pessoa que irá ler/prestar manutenção no código que você criou
+
+## Informações extras
+
+- Criador: sRobert C. Martin
