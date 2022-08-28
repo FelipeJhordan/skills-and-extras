@@ -1,0 +1,37 @@
+# Builder
+
+## Intenção Oficial
+Separar a construção de um objeto complexo de sua representação de modo
+que o mesmo processo de construção possa criar diferentes representações
+
+## Visão geral do Builder
+- O padrão sugere a separação do código que cria e o código de usa o objeto
+- Trata da criação de objetos complexos ( completos de verdade)
+    - Construtores muito complexos
+    - Compsição de muitos objetos ( composite )
+    - Algoritmo de criação de objeto complexo
+- Permite a criação de um objeto em etapas
+- Permite method chaining
+- Objeto final pode variar de acordo com a necessidade
+- É um padrão complexo e as vezes só é necessário quando um objeto não pode ser produzido em uma etapa.
+
+## Processos
+Director ( Optional) - > Defini a ordem em que as etapas de construção do objeto
+serão executas
+
+Builder (interface/classe abstrata) - vai fornecer os contratos
+
+Concrete Builder - É real implementação do Builder
+
+Product -> O pruduto ( objeto ) final
+
+## Consequencias
+### Bom
+- Separa a criação da utilização
+- Cliente não preicsa criar objetos diretamente
+- O mesmo código pode construir objetos diferentes
+- Ajuda na aplicação dos principios SRP e OCP
+
+### Ruim
+- O código final pode se tornar muito complexo
+
