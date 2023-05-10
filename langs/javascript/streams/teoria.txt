@@ -1,0 +1,7 @@
+Fundamentos de streams
+Existem quatro tipos de streams fundamentais no Node.js: streams de Leitura/Readable (que ao pé da letra, a tradução seria " Stream Legível" em português), Gravável, Duplex e de Transformação.
+
+Um stream de Leitura é uma abstração de uma fonte da qual os dados podem ser consumidos. Um exemplo disso é o método fs.createReadStream.
+Um stream Gravável é uma abstração para um destino no qual os dados podem ser gravados. Um exemplo disso é o método fs.createWriteStream.
+Um stream Duplex é de leitura e gravável ao mesmo tempo. Um exemplo disso é o TCP socket.
+Um stream de Transformação é basicamente um stream Duplex que pode ser usado para modificar ou transformar os dados à medida que são gravados e lidos. Um exemplo disso é o stream zlib.createGzip, usado para compactar os dados com gzip. Você pode pensar em um stream de transformação como uma função em que a entrada é a parte do stream Gravável e a saída é a parte do stream de Leitura. Você também pode ouvir falar dos streams de transformação com a expressão "through streams".
